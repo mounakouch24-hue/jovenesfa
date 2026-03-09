@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jóvenes FA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{background:#f5f7fb;color:#333;}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:10;}
+
+header h1{color:#2563eb;}
+
+nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500;}
+
+.auth-buttons a{margin-left:15px;padding:8px 18px;border-radius:20px;background:#2563eb;color:white;text-decoration:none;font-size:14px;}
+
+.hero{height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#2563eb,#4f46e5);color:white;padding:40px;}
+
+.hero h2{font-size:48px;margin-bottom:20px;}
+.hero p{font-size:20px;max-width:700px;margin-bottom:40px;}
+
+.buttons{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;}
+
+.btn{padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:600;background:white;color:#2563eb;transition:0.3s;}
+
+.btn:hover{transform:scale(1.05);}
+
+.section{padding:80px 10%;text-align:center;}
+.section h3{font-size:32px;margin-bottom:20px;}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:40px;}
+
+.card{background:white;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:0.3s;}
+.card:hover{transform:translateY(-5px);}
+
+button{margin-top:15px;padding:10px 20px;border:none;border-radius:20px;background:#2563eb;color:white;cursor:pointer;}
+
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;margin-top:40px;}
+
+.step{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);} 
+
+.download{background:#1e293b;color:white;padding:80px 10%;text-align:center;}
+
+.download-buttons{display:flex;justify-content:center;gap:25px;margin-top:30px;flex-wrap:wrap;}
+
+.store{padding:15px 30px;background:#2563eb;border-radius:30px;text-decoration:none;color:white;font-weight:600;}
+
+.stats{display:flex;justify-content:center;gap:60px;margin-top:40px;flex-wrap:wrap;}
+
+.stat{font-size:22px;font-weight:600;}
+
+footer{background:#111827;color:white;padding:30px;text-align:center;margin-top:40px;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Jóvenes FA</h1>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#como">Cómo funciona</a>
+<a href="#app">App</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<div class="auth-buttons">
+<a href="#">Login</a>
+<a href="#">Registro</a>
+</div>
+</header>
+
+<section class="hero">
+<h2>Servicios tecnológicos hechos por jóvenes</h2>
+<p>Conectamos jóvenes técnicos con personas que necesitan reparar móviles, ordenadores o configurar redes WiFi.</p>
+
+<div class="buttons">
+<a class="btn" href="#app">Descargar App</a>
+<a class="btn" href="#publicar">Publicar Servicio</a>
+</div>
+</section>
+
+<section class="section" id="servicios">
+<h3>Nuestros Servicios</h3>
+
+<div class="services">
+
+<div class="card">
+<h4>Reparación de móviles</h4>
+<p>Cambio de pantalla, batería y problemas de software.</p>
+</div>
+
+<div class="card">
+<h4>Reparación de ordenadores</h4>
+<p>Solución de errores, virus e instalación de programas.</p>
+</div>
+
+<div class="card">
+<h4>Configuración WiFi</h4>
+<p>Instalación de redes domésticas y mejora de conexión.</p>
+</div>
+
+<div class="card">
+<h4>Soporte técnico</h4>
+<p>Ayuda tecnológica rápida y económica.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="como">
+<h3>Cómo funciona</h3>
+
+<div class="how">
+
+<div class="step">
+<h4>1. Publica tu servicio</h4>
+<p>Los técnicos crean su perfil y publican sus habilidades.</p>
+</div>
+
+<div class="step">
+<h4>2. Los clientes buscan ayuda</h4>
+<p>Encuentran técnicos disponibles cerca de ellos.</p>
+</div>
+
+<div class="step">
+<h4>3. Contactan</h4>
+<p>Cliente y técnico se comunican para acordar el servicio.</p>
+</div>
+
+<div class="step">
+<h4>4. Valoración</h4>
+<p>El cliente deja una valoración después del trabajo.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="publicar">
+<h3>Publica tu Servicio</h3>
+<p>Si eres un joven técnico puedes ofrecer tus servicios fácilmente.</p>
+
+<div class="services">
+
+<div class="card">
+<h4>Crear servicio</h4>
+<p>Publica reparaciones de móviles, ordenadores o soporte técnico.</p>
+<button>Publicar Servicio</button>
+</div>
+
+<div class="card">
+<h4>Gestionar trabajos</h4>
+<p>Recibe solicitudes de clientes y acepta trabajos desde la plataforma.</p>
+<button>Ver Solicitudes</button>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="clientes">
+<h3>Conectar con Técnicos</h3>
+
+<div class="services">
+
+<div class="card">
+<h4>Buscar técnicos</h4>
+<p>Encuentra técnicos cerca de ti para reparar tus dispositivos.</p>
+<button>Buscar Técnicos</button>
+</div>
+
+<div class="card">
+<h4>Contactar técnico</h4>
+<p>Habla directamente con el técnico y acuerda el servicio.</p>
+<button>Contactar</button>
+</div>
+
+<div class="card">
+<h4>Valoraciones</h4>
+<p>Los clientes pueden valorar el servicio recibido.</p>
+<p>⭐⭐⭐⭐⭐</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h3>Nuestra comunidad</h3>
+
+<div class="stats">
+<div class="stat">👨‍🔧 10 Técnicos</div>
+<div class="stat">👤 12 Clientes</div>
+<div class="stat">🔧 20 Servicios</div>
+</div>
+</section>
+
+<section class="download" id="app">
+<h3>Descarga la App</h3>
+<p>Disponible para Android y Mac</p>
+
+<div class="download-buttons">
+<a class="store" href="#">Descargar para Android</a>
+<a class="store" href="#">Descargar para Mac</a>
+</div>
+</section>
+
+<section class="section" id="contacto">
+<h3>Contacto</h3>
+<p>Email: contacto@jovenesfa.com</p>
+<p>Teléfono: +34 600 000 000</p>
+</section>
+
+<footer>
+<p>© 2026 Jóvenes FA - Plataforma de servicios tecnológicos</p>
+</footer>
+
+</body>
+</html>
